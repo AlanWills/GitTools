@@ -1,8 +1,0 @@
-pall = !cd CelesteEngine/ && git pull && cd .. && git pull
-s = status
-sub = pull && git push
-celup = add CelesteEngine && git commit -m\"Updating submodule\" && git submit
-remorig = find . -name \"*.orig\" -type f -delete
-resfile = "!f() { filetype=${1}; git checkout -- $filetype;  }; f"
-dfile = "!f() { filetype=${1}; git diff -- $filetype;  }; f"
-	a = "!f() { filetype=${1}; git add $filetype; }; f"
